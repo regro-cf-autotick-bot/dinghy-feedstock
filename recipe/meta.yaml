@@ -1,5 +1,5 @@
 {% set name = "dinghy" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dinghy-{{ version }}.tar.gz
-  sha256: bd60b0326b9dcc4c4dd9699cc1e86bab5d6ddfd9de4bdaa9b6129a46f4675205
+  sha256: 90eba56b31f4ab272c0b7a317beadc2a4afd10db5b6079016ca1f495aa45b4b9
 
 build:
   entry_points:
