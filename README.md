@@ -1,11 +1,11 @@
-About dinghy
-============
+About dinghy-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dinghy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/nedbat/dinghy
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dinghy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Dinghy daily digest tool
 
