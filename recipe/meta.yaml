@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dinghy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dinghy-{{ version }}.tar.gz
   sha256: bd60b0326b9dcc4c4dd9699cc1e86bab5d6ddfd9de4bdaa9b6129a46f4675205
 
 build:
@@ -14,14 +14,14 @@ build:
     - dinghy = dinghy.__main__:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - aiofiles >=0.8
     - aiohttp >3
     - click >8
@@ -39,6 +39,7 @@ test:
     - dinghy --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/nedbat/dinghy
